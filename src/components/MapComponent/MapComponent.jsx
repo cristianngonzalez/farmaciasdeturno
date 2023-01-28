@@ -1,22 +1,30 @@
-import React from "react";
+import { useMemo } from 'react';
+import { GoogleMap , useLoadScript , Marker } from "@react-google-maps/api";
 
-class MapComponent extends React.Component{
+export default function MapComponent(){
+
+   const {isLoaded} = useLoadScript({
+      googleMapsApiKey: 'AIzaSyA_ZYKLA17T1Qeui1UwvMFqJvhEwXkbupA',
+   })
 
 
-
-   render(){
-      return(
-
-        <>
-            
-        </>
-
-      )
+   if(!isLoaded){
+      return <>Cargando el mapa...</>
    }
 
-}
+   return(
+      <>
 
-export default MapComponent;
+         <div className='mapContainer'></div>
+
+         <GoogleMap 
+            zoom={10} 
+            center={{lat: 44 , lng: -80}} 
+            mapContainerClassName="mapContainer"
+         ></GoogleMap>
+      </>
+   )
+}
 
 
 

@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import './assets/css/bootstrap.min.css';
 import './App.css';
+
+//Components
+import HeaderComponent from './components/HeaderComponent/HeaderComponent';
+import MapComponent from './components/MapComponent/MapComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <HeaderComponent></HeaderComponent>
+      
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-md-6'>
+
+          </div>
+          <div className='col-md-6'>
+            <MapComponent></MapComponent>
+          </div>
+        </div>
+      </div>
+
+    </>
   );
 }
 

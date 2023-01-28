@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { GoogleMap , useLoadScript , Marker } from "@react-google-maps/api";
 
+import './MapComponent.css';
+
 export default function MapComponent(){
 
    const {isLoaded} = useLoadScript({
@@ -15,7 +17,6 @@ export default function MapComponent(){
    return(
       <>
 
-         <div className='mapContainer'></div>
 
          <GoogleMap 
             zoom={10} 

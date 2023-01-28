@@ -4,6 +4,7 @@ import './App.css';
 //Components
 import HeaderComponent from './components/HeaderComponent/HeaderComponent';
 import MapComponent from './components/MapComponent/MapComponent';
+import ListComponent from './components/ListComponent/ListComponent';
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <HeaderComponent></HeaderComponent>
       
       <div className='container-fluid'>
-        <div className='row'>
+        <div className='row mt-3'>
           <div className='col-md-6'>
-
+            <ListComponent></ListComponent>
           </div>
           <div className='col-md-6'>
             <MapComponent></MapComponent>

@@ -22,7 +22,9 @@ export default function MapComponent(){
             zoom={10} 
             center={{lat: 44 , lng: -80}} 
             mapContainerClassName="mapContainer"
-         ></GoogleMap>
+         >
+            <Marker position={{lat: 44 , lng: -80}}  />
+         </GoogleMap>
       </>
    )
 }

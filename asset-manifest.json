@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/farmaciasdeturno/static/css/main.cdd33cf7.css",
+    "main.js": "/farmaciasdeturno/static/js/main.8f29c0a6.js",
+    "static/js/787.d0a0fa03.chunk.js": "/farmaciasdeturno/static/js/787.d0a0fa03.chunk.js",
+    "index.html": "/farmaciasdeturno/index.html",
+    "main.cdd33cf7.css.map": "/farmaciasdeturno/static/css/main.cdd33cf7.css.map",
+    "main.8f29c0a6.js.map": "/farmaciasdeturno/static/js/main.8f29c0a6.js.map",
+    "787.d0a0fa03.chunk.js.map": "/farmaciasdeturno/static/js/787.d0a0fa03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdd33cf7.css",
+    "static/js/main.8f29c0a6.js"
+  ]
+}
